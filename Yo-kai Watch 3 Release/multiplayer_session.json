@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "room_code": "SOLO",
+  "is_host": false,
+  "player_id": "player_92a912e4",
+  "player_name": "Joueur",
+  "character_id": "nathan",
+  "character_name": "Nathan Adams",
+  "server_address": "127.0.0.1",
+  "udp_port": 7778,
+  "sync_interval_ms": 33,
+  "players": []
+}

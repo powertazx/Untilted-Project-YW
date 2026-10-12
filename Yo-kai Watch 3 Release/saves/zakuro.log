@@ -1,0 +1,25 @@
+[    3.046 INFO  zakuro::discord] Discord RPC: Module initialisé. Configuration: discord_rpc.json
+[    3.046 INFO  zakuro::multiplayer] Multijoueur : salon 'SOLO', joueur Joueur (Nathan Adams), invité
+[    3.063 INFO  zakuro::director] ScreenDirector is DISABLED (Native Dual-Screen top/bottom layout active)
+[    3.710 INFO  zakuro_gpu::backend::vulkan] Vulkan on AMD Radeon(TM) RX 6500M, the renderer's device too
+[    3.715 INFO  zakuro_gpu::backend::vulkan] presenting in fifo mode, of immediate, fifo, fifo relaxed
+[    3.859 INFO  zakuro::discord] Discord RPC: Connecté à Discord avec succès (pipe 0) !
+[    4.141 INFO  zakuro] presenting with the vulkan backend
+[    4.142 INFO  zakuro_fs] NCSD cartridge, media id 00040000001D6900, image size 4096 MiB
+[    4.144 INFO  zakuro_core::loader] loaded yw3 [CTR-P-ALZF] title=00040000001D6900 v2
+[    4.199 INFO  zakuro_core::loader] entry 0x00100000, stack top 0x10000000, priority 48, 64 MiB app memory
+[    4.200 INFO  zakuro_core::loader] running the recompiled code linked in, 293614 entry points, 0 modules
+[    4.282 INFO  zakuro_core::loader] drawing on AMD Radeon(TM) RX 6500M at 4x, shown straight from the GPU, through Vulkan
+[    4.340 INFO  zakuro_core::services::fs] LayeredFS: mounted mod '00040000001D6900\yw_a.fa.ywpatch' (1810159792 bytes, original 1808973332) over RomFS file 'yw_a.fa' at offset 0xD30BB000
+[    4.342 INFO  zakuro_core::services::fs] LayeredFS: mounted mod '00040000001D6900\yw_lg_fr.fa.ywpatch' (190605088 bytes, original 190350504) over RomFS file 'yw_lg_fr.fa' at offset 0x13EF088B0
+[    4.342 INFO  zakuro_core::services::fs] fs: opened SelfNCCH RomFS at file offset 0x506000, 3376 MiB (2 active mod archives)
+[    4.344 INFO  zakuro_core::services::fs] LayeredFS: mounted mod '00040000001D6900\yw_a.fa.ywpatch' (1810159792 bytes, original 1808973332) over RomFS file 'yw_a.fa' at offset 0xD30BB000
+[    4.345 INFO  zakuro_core::services::fs] LayeredFS: mounted mod '00040000001D6900\yw_lg_fr.fa.ywpatch' (190605088 bytes, original 190350504) over RomFS file 'yw_lg_fr.fa' at offset 0x13EF088B0
+[    4.346 INFO  zakuro_core::services::fs] fs: opened SelfNCCH RomFS at file offset 0x506000, 3376 MiB (2 active mod archives)
+[    4.347 INFO  zakuro::coop] Multijoueur : le héros prend le modèle de Nathan Adams
+[    4.358 INFO  zakuro_core::services::dsp] dsp: the title uploaded a firmware component; using the HLE audio path
+[    4.849 WARN  zakuro] the sound ran dry 1 times, the emulation is falling behind
+[    5.948 WARN  zakuro] the sound ran dry 2 times, the emulation is falling behind
+[    6.501 WARN  zakuro] the sound ran dry 1 times, the emulation is falling behind
+[    7.051 WARN  zakuro] the sound ran dry 1 times, the emulation is falling behind
+[    7.555 WARN  zakuro] the sound ran dry 1 times, the emulation is falling behind

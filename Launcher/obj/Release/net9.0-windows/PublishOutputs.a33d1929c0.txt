@@ -1,0 +1,22 @@
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\Yo-kai Watch Launcher.exe
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\runtimes\win-x86\native\WebView2Loader.dll
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\runtimes\win-x64\native\WebView2Loader.dll
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\wwwroot\css\app.css
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\wwwroot\css\app.css.bak_avant_refonte
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\wwwroot\css\lobby.css
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\wwwroot\images\icon.png
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\wwwroot\images\yw3_logo.png
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\wwwroot\index.html
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\wwwroot\index.html.bak_avant_refonte
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\wwwroot\js\app.js
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\wwwroot\js\app.js.bak_avant_refonte
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\Yo-kai Watch Launcher.dll
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\Yo-kai Watch Launcher.deps.json
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\Yo-kai Watch Launcher.runtimeconfig.json
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\Microsoft.Web.WebView2.Core.dll
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\Microsoft.Web.WebView2.WinForms.dll
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\Microsoft.Web.WebView2.Wpf.dll
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\Microsoft.Web.WebView2.Core.xml
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\Microsoft.Web.WebView2.WinForms.xml
+D:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\Launcher\Microsoft.Web.WebView2.Wpf.xml

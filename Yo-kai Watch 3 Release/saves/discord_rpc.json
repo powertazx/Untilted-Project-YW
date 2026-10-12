@@ -1,0 +1,12 @@
+{
+  "client_id": "METTRE_VOTRE_APPLICATION_ID_ICI",
+  "enabled": true,
+  "dynamic_scene": true,
+  "details": "Yo-kai Watch 3 Ultimate PC",
+  "state": "En pleine aventure",
+  "large_image_key": "yw3_logo",
+  "large_image_text": "Yo-kai Watch 3 Ultimate PC",
+  "small_image_key": "icon",
+  "small_image_text": "Portage Natif PC",
+  "show_time": true
+}

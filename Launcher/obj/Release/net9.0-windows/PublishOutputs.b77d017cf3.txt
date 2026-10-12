@@ -1,0 +1,19 @@
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\Yo-kai Watch Launcher.exe
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\runtimes\win-x86\native\WebView2Loader.dll
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\runtimes\win-x64\native\WebView2Loader.dll
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\runtimes\win-arm64\native\WebView2Loader.dll
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\wwwroot\css\app.css
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\wwwroot\images\icon.png
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\wwwroot\images\yw3_logo.png
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\wwwroot\index.html
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\wwwroot\js\app.js
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\Yo-kai Watch Launcher.dll
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\Yo-kai Watch Launcher.deps.json
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\Yo-kai Watch Launcher.runtimeconfig.json
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\Yo-kai Watch Launcher.pdb
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\Microsoft.Web.WebView2.Core.dll
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\Microsoft.Web.WebView2.WinForms.dll
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\Microsoft.Web.WebView2.Wpf.dll
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\Microsoft.Web.WebView2.Core.xml
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\Microsoft.Web.WebView2.WinForms.xml
+d:\Yo-kai Watch 3 For PC\Yo-kai Watch 3 Ultimate PC\LauncherBin\Microsoft.Web.WebView2.Wpf.xml

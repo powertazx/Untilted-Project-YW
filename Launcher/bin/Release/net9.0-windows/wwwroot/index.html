@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo-kai Watch PC - Launcher</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/lobby.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar style ChatGPT -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="app-brand">
+                    <img src="images/icon.png" alt="Icon" class="brand-logo" onerror="this.style.display='none'">
+                    <div class="brand-info">
+                        <span class="brand-title">YO-KAI WATCH</span>
+                        <span class="brand-sub">PC LAUNCHER</span>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <button class="nav-btn active" data-tab="games">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="6" width="20" height="12" rx="3"></rect>
+                        <path d="M6 12h4m-2-2v4m7-3h.01m3 2h.01"></path>
+                    </svg>
+                    <span>Jeux</span>
+                </button>
+
+                <button class="nav-btn" data-tab="multiplayer">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <div class="nav-label-wrap">
+                        <span>Multijoueur</span>
+                        <span class="badge-pill online-badge">Lobby</span>
+                    </div>
+                </button>
+
+                <button class="nav-btn" data-tab="controls">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M6 12h.01M10 12h.01M14 12h.01M18 12h.01M8 16h8"></path>
+                    </svg>
+                    <span>Touches & Contrôles</span>
+                </button>
+
+                <button class="nav-btn" data-tab="settings">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                    <span>Paramètres Graphiques</span>
+                </button>
+            </nav>
+
+            <!-- Bottom profile -->
+            <div class="sidebar-footer">
+                <div class="user-card" id="btn-edit-profile">
+                    <div class="user-avatar" id="sidebar-avatar">N</div>
+                    <div class="user-info">
+                        <span class="user-name" id="sidebar-player-name">Nathan</span>
+                        <span class="user-status"><span class="status-dot"></span>Prêt pour l'aventure</span>
+                    </div>
+                    <svg class="edit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                    </svg>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- TAB 1: JEUX -->
+            <section id="tab-games" class="tab-pane active">
+                <div class="content-header">
+                    <h2>Bibliothèque de Jeux</h2>
+                    <span class="header-sub">Lancez vos aventures Yo-kai Watch sur PC</span>
+                </div>
+
+                <div class="games-grid">
+                    <!-- Featured: Yo-kai Watch 3 -->
+                    <div class="game-card featured-game">
+                        <div class="game-banner">
+                            <div class="banner-overlay"></div>
+                            <img src="images/yw3_logo.png" alt="Logo Yo-kai Watch 3" class="game-banner-logo" onerror="this.style.display='none'">
+                            <div class="banner-badges">
+                                <span class="game-badge badge-active" id="badge-game-status">Actif</span>
+                                <span class="game-badge badge-recomp">Portage Natif PC</span>
+                                <span class="game-badge badge-fps" id="badge-game-fps">60 FPS</span>
+                                <span class="game-badge badge-vulkan">Vulkan</span>
+                            </div>
+                        </div>
+
+                        <div class="game-details">
+                            <div class="game-header-row">
+                                <div>
+                                    <h3 class="game-title">Yo-kai Watch 3 Ultimate PC</h3>
+                                    <p class="game-desc">Explorez Granval et Pistachia avec Nathan et Ariane. Moteur recompilé à 60 FPS avec double écran natif et intégration multijoueur.</p>
+                                </div>
+                                <button class="btn btn-primary btn-play" id="btn-play-yw3">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" id="play-icon" style="width: 20px; height: 20px;">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span id="play-btn-text">JOUER</span>
+                                </button>
+                            </div>
+
+                            <div class="game-actions-bar">
+                                <button class="btn btn-secondary" id="btn-open-saves">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                    <span>Sauvegardes</span>
+                                </button>
+                                <button class="btn btn-secondary" id="btn-open-studio">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                    </svg>
+                                    <span>Éditeur Studio DLC</span>
+                                </button>
+                                <button class="btn btn-secondary" id="btn-goto-mp">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                    <span>Mode Multijoueur</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Catalog Future games -->
+                    <div class="coming-soon-grid">
+                        <div class="game-card game-card-locked">
+                            <div class="locked-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                            </div>
+                            <div class="game-info-mini">
+                                <h4>Yo-kai Watch 1 PC</h4>
+                                <span class="badge-pill">Bientôt disponible</span>
+                            </div>
+                        </div>
+
+                        <div class="game-card game-card-locked">
+                            <div class="locked-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                            </div>
+                            <div class="game-info-mini">
+                                <h4>Yo-kai Watch 2 : Esprits Farceurs / Fantômes Bouffis</h4>
+                                <span class="badge-pill">Bientôt disponible</span>
+                            </div>
+                        </div>
+
+                        <div class="game-card game-card-locked">
+                            <div class="locked-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                            </div>
+                            <div class="game-info-mini">
+                                <h4>Yo-kai Watch Blasters PC</h4>
+                                <span class="badge-pill">Bientôt disponible</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: MULTIJOUEUR -->
+            <section id="tab-multiplayer" class="tab-pane">
+                <!-- State 1: Not in a room -->
+                <div id="mp-lobby-entry" class="mp-subview">
+                    <div class="content-header">
+                        <h2>Multijoueur Yo-kai Watch</h2>
+                        <span class="header-sub">Créez un salon privé ou rejoignez vos amis avec un code à 5 caractères.</span>
+                    </div>
+
+                    <div class="mp-cards-container">
+                        <!-- Host Card -->
+                        <div class="mp-card host-card">
+                            <div class="mp-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <h3>Créer un Salon Privé (Hôte)</h3>
+                            <p>Vous deviendrez l'hôte de la session. Un code d'accès aléatoire à 5 chiffres/lettres sera généré pour vos amis (jusqu'à 4 joueurs max).</p>
+                            
+                            <div class="host-ip-banner">
+                                <span class="host-ip-label">Votre adresse IP :</span>
+                                <span class="host-ip-value" id="entry-local-ip">10.0.0.3</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Port du serveur (optionnel)</label>
+                                <input type="number" id="host-port" value="7777" class="input-dark" placeholder="7777">
+                            </div>
+
+                            <button class="btn btn-primary btn-block" id="btn-create-room">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                <span>CRÉER LE SALON</span>
+                            </button>
+                        </div>
+
+                        <!-- Join Card -->
+                        <div class="mp-card join-card">
+                            <div class="mp-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4m-5-4l5-5-5-5m5 5H3"></path>
+                                </svg>
+                            </div>
+                            <h3>Rejoindre un Salon</h3>
+                            <p>Entrez le code unique à 5 caractères que l'hôte vous a partagé. Connexion automatique sur le réseau local ou via IP.</p>
+
+                            <div class="form-group">
+                                <label>Code du Salon (5 caractères)</label>
+                                <input type="text" id="join-code" class="input-dark input-code" maxlength="5" placeholder="EX: K9W3A">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Adresse IP hôte</label>
+                                <input type="text" id="join-ip" class="input-dark" placeholder="AUTO (Local ou LAN)">
+                                <small class="form-hint">Laissez AUTO pour détection automatique, ou renseignez l'IP affichée par l'hôte.</small>
+                            </div>
+
+                            <button class="btn btn-secondary btn-block" id="btn-join-room">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14m-7-7l7 7-7 7"></path>
+                                </svg>
+                                <span>REJOINDRE LE SALON</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- State 2: Inside a Room -->
+                <div id="mp-lobby-room" class="mp-subview" style="display: none;">
+                    <!-- Room header -->
+                    <div class="lobby-head">
+                        <div class="lobby-head-main">
+                            <span class="lobby-eyebrow">Salon multijoueur</span>
+                            <div class="lobby-code-row">
+                                <span class="lobby-code" id="room-code-display">-----</span>
+                                <button class="icon-btn" id="btn-copy-code" title="Copier le code">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="lobby-head-meta">
+                            <div class="meta-chip" title="Adresse à donner aux joueurs hors de votre réseau local">
+                                <span class="meta-chip-label">IP de l'hôte</span>
+                                <span class="meta-chip-value" id="room-ip-display">127.0.0.1:7777</span>
+                                <button class="icon-btn icon-btn-sm" id="btn-copy-ip" title="Copier l'IP">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                </button>
+                            </div>
+                            <div class="meta-chip">
+                                <span class="meta-chip-label">Joueurs</span>
+                                <span class="meta-chip-value" id="room-player-count">1 / 4</span>
+                            </div>
+                            <button class="btn btn-ghost-danger btn-sm" id="btn-leave-room">Quitter</button>
+                        </div>
+                    </div>
+
+                    <div class="lobby-grid">
+                        <!-- Left: character choice -->
+                        <div class="lobby-panel">
+                            <div class="panel-head">
+                                <div>
+                                    <h3>Votre personnage</h3>
+                                    <p class="panel-sub" id="char-lock-hint">Cliquez sur un personnage pour le prendre. Un personnage par joueur.</p>
+                                </div>
+                            </div>
+                            <div class="char-grid" id="character-wheel-track"></div>
+                            <div class="char-detail" id="char-preview-card"></div>
+                        </div>
+
+                        <!-- Right: members + launch -->
+                        <div class="lobby-side">
+                            <div class="lobby-panel">
+                                <div class="panel-head">
+                                    <h3>Membres</h3>
+                                </div>
+                                <div class="member-list" id="room-slots-container"></div>
+                            </div>
+
+                            <div class="lobby-panel launch-panel">
+                                <button class="btn btn-launch" id="btn-start-multiplayer">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                                    <span id="launch-label">LANCER MON JEU</span>
+                                </button>
+                                <span class="launch-hint" id="launch-hint">Chacun lance son jeu quand il veut. Vous vous retrouverez sur la même zone.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <details class="lobby-logs-box">
+                        <summary class="logs-header">Journal du salon</summary>
+                        <div class="logs-body" id="lobby-logs-container">
+                            <div class="log-line">[Lobby] Salon initialisé.</div>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- TAB 3: COMMANDES & TOUCHES -->
+            <section id="tab-controls" class="tab-pane">
+                <div class="content-header">
+                    <h2>Configuration des Touches & Contrôles</h2>
+                    <span class="header-sub">Configurez les commandes de Zakuro pour le clavier et la manette. Sauvegarde directe dans settings.toml.</span>
+                </div>
+
+                <div class="controls-container">
+                    <div class="controls-panel">
+                        <div class="panel-header-row">
+                            <h3>Clavier PC</h3>
+                            <button class="btn btn-secondary btn-sm" id="btn-default-keys">Restaurer ZQSD / Par Défaut</button>
+                        </div>
+                        <p class="panel-sub">Cliquez sur une touche puis appuyez sur la nouvelle touche de votre clavier.</p>
+
+                        <div class="keybind-grid" id="keyboard-bindings-grid">
+                            <!-- Keyboard bindings generated by JS -->
+                        </div>
+                    </div>
+
+                    <div class="controls-panel">
+                        <div class="panel-header-row">
+                            <h3>Manette de Jeu (Gamepad)</h3>
+                            <button class="btn btn-secondary btn-sm" id="btn-default-pad">Manette Standard</button>
+                        </div>
+                        <p class="panel-sub">Correspondance des boutons de manette Xbox / PlayStation / Switch.</p>
+
+                        <div class="keybind-grid" id="pad-bindings-grid">
+                            <!-- Pad bindings generated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 4: PARAMÈTRES GRAPHIQUES -->
+            <section id="tab-settings" class="tab-pane">
+                <div class="content-header">
+                    <h2>Paramètres Graphiques & Système</h2>
+                    <span class="header-sub">Personnalisez la qualité visuelle, la résolution et le comportement d'affichage.</span>
+                </div>
+
+                <div class="settings-form">
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <label>Moteur de Rendu Graphique</label>
+                            <span>Vulkan offre des performances maximales et un affichage 60 FPS ultra fluide.</span>
+                        </div>
+                        <select id="setting-renderer" class="select-dark">
+                            <option value="vulkan">Vulkan (Recommandé)</option>
+                            <option value="opengl">OpenGL</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <label>Résolution de Rendu 3D Interne</label>
+                            <span>Multiplie la résolution native 240p de la console pour une netteté HD / 4K.</span>
+                        </div>
+                        <div class="slider-wrap">
+                            <input type="range" id="setting-resolution" min="1" max="6" value="4" class="slider-dark">
+                            <span class="slider-value" id="val-resolution">4x (1440p)</span>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <label>Lancer directement en Plein Écran</label>
+                            <span>Active le mode plein écran dès le démarrage du jeu (F11 pour alterner).</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="setting-fullscreen" checked>
+                            <span class="slider-switch"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <label>Auto-stretch 16:9</label>
+                            <span>Supprime les bandes noires et adapte l'écran de jeu aux moniteurs modernes.</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="setting-stretch" checked>
+                            <span class="slider-switch"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <label>Afficher le compteur de FPS</label>
+                            <span>Affiche la fréquence d'images par seconde en haut de l'écran.</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="setting-fps" checked>
+                            <span class="slider-switch"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <label>Fréquence d'Images Cible (FPS)</label>
+                            <span>Cadence du moteur de jeu : 60 FPS est la vitesse normale (100%). Sur 3DS, 120 FPS agit comme un mode Turbo (vitesse x2).</span>
+                        </div>
+                        <select id="setting-fps-target" class="select-dark">
+                            <option value="60" selected>60 FPS (Vitesse normale 100% - Recommandé pour écrans 60/120/144Hz)</option>
+                            <option value="120">120 FPS (Mode Turbo / Vitesse x2)</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <label>Volume Audio</label>
+                            <span>Réglez le volume général de l'émulateur.</span>
+                        </div>
+                        <div class="slider-wrap">
+                            <input type="range" id="setting-volume" min="0" max="100" value="100" class="slider-dark">
+                            <span class="slider-value" id="val-volume">100%</span>
+                        </div>
+                    </div>
+
+                    <div class="settings-actions">
+                        <button class="btn btn-primary" id="btn-save-settings">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                                <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                                <polyline points="7 3 7 8 15 8"></polyline>
+                            </svg>
+                            <span>Enregistrer les paramètres</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Rebind Key Modal -->
+    <div class="modal-backdrop" id="rebind-modal" style="display: none;">
+        <div class="modal-box">
+            <h3>Assigner une nouvelle touche</h3>
+            <p>Appuyez sur une touche de votre clavier pour l'action : <strong id="rebind-action-name">A</strong></p>
+            <div class="press-key-indicator">
+                <span class="pulsing-text">En attente de saisie...</span>
+            </div>
+            <button class="btn btn-secondary" id="btn-cancel-rebind">Annuler</button>
+        </div>
+    </div>
+
+    <!-- Edit Profile Modal -->
+    <div class="modal-backdrop" id="profile-modal" style="display: none;">
+        <div class="modal-box">
+            <h3>Modifier votre Pseudo</h3>
+            <p>Ce nom sera visible par vos amis dans les salons multijoueurs.</p>
+            <div class="form-group">
+                <input type="text" id="input-profile-name" class="input-dark" maxlength="16" placeholder="Votre pseudo">
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" id="btn-cancel-profile">Annuler</button>
+                <button class="btn btn-primary" id="btn-save-profile">Valider</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- First Launch Welcome Modal -->
+    <div class="modal-backdrop" id="welcome-modal" style="display: none;">
+        <div class="modal-box welcome-modal-box">
+            <div class="welcome-badge">✦ PREMIÈRE CONNEXION</div>
+            <h3>Bienvenue dans Yo-kai Watch PC !</h3>
+            <p>Veuillez choisir votre pseudo pour commencer. Ce nom sera visible en jeu et dans les salons multijoueurs :</p>
+            <div class="form-group" style="margin-top: 18px;">
+                <input type="text" id="input-welcome-name" class="input-dark input-code" style="font-size: 16px; letter-spacing: 2px;" maxlength="16" placeholder="Entrez votre pseudo">
+                <small class="form-hint">2 à 16 caractères. Les doublons ne sont pas autorisés dans un même salon.</small>
+            </div>
+            <div class="modal-actions" style="margin-top: 20px;">
+                <button class="btn btn-primary btn-block btn-lg" id="btn-save-welcome">
+                    <span>COMMENCER L'AVENTURE</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Update Required Modal (Supabase Auto-Update) -->
+    <div class="modal-backdrop" id="update-modal" style="display: none;">
+        <div class="modal-box update-modal-box">
+            <h3 class="update-title">Ce launcher nécessite une mise a jour !</h3>
+            <p class="update-subtitle">Mettez a jour en cliquant sur le bouton ci-dessous pour pouvoir tester mon chef d'oeuvre !</p>
+            
+            <div class="update-version-section">
+                <span class="update-version-label">Nouvelle version :</span>
+                <span class="update-version-value" id="update-version-text">v0.0.0</span>
+            </div>
+
+            <button class="btn btn-primary update-btn" id="btn-do-update">
+                <span>Mettre à jour</span>
+            </button>
+
+            <div class="update-date-section">
+                <span class="update-date-label">Date de la dernière version :</span>
+                <span class="update-date-value" id="update-date-text">00/00/00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Install Game Modal -->
+    <div class="modal-backdrop" id="install-modal" style="display: none;">
+        <div class="modal-box install-modal-box">
+            <div class="install-header">
+                <div class="install-icon-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="install-title">Installer Yo-kai Watch 3 Ultimate</h3>
+                    <p class="install-subtitle">Choisissez où installer les fichiers nécessaires du jeu sur votre PC :</p>
+                </div>
+            </div>
+            
+            <div class="install-path-group">
+                <label class="install-path-label">Dossier d'installation :</label>
+                <div class="install-input-row">
+                    <input type="text" id="input-install-path" class="input-dark install-input" spellcheck="false">
+                    <button class="btn btn-secondary btn-browse" id="btn-browse-install">Parcourir...</button>
+                </div>
+                <div class="install-target-preview">
+                    Le jeu sera installé dans : <span class="target-folder-highlight" id="preview-target-folder">...</span>
+                </div>
+            </div>
+
+            <div class="install-space-info" id="install-space-info">
+                <div class="space-item">
+                    <span class="space-label">Espace requis :</span>
+                    <strong class="space-val space-req">~3.6 Go</strong>
+                </div>
+                <div class="space-divider">|</div>
+                <div class="space-item">
+                    <span class="space-label">Espace disponible :</span>
+                    <strong class="space-val space-free" id="install-free-space">...</strong>
+                </div>
+            </div>
+
+            <div class="install-space-warning" id="install-space-warning" style="display: none;">
+                ⚠️ Espace insuffisant sur ce lecteur. Veuillez choisir un autre disque (ex: D:) ou libérer de l'espace.
+            </div>
+
+            <!-- Progress section during install -->
+            <div class="install-progress-section" id="install-progress-section" style="display: none;">
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-fill" id="install-progress-fill" style="width: 0%;"></div>
+                </div>
+                <div class="progress-info-row">
+                    <span class="progress-file" id="install-current-file">Copie des fichiers...</span>
+                    <span class="progress-percent" id="install-progress-text">0%</span>
+                </div>
+            </div>
+
+            <div class="install-locate-alt" id="install-locate-alt">
+                <span>Vous avez déjà le jeu téléchargé ?</span>
+                <button type="button" class="btn-link" id="btn-locate-existing">Localiser le dossier existant</button>
+            </div>
+
+            <div class="modal-actions install-actions" id="install-actions-bar">
+                <button class="btn btn-secondary" id="btn-cancel-install">Annuler</button>
+                <button class="btn btn-primary btn-install-confirm" id="btn-start-install">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 17px; height: 17px; margin-right: 6px;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>INSTALLER</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast-notify" class="toast">Action effectuée</div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

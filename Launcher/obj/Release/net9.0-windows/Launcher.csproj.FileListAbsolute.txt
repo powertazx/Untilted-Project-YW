@@ -1,0 +1,38 @@
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\wwwroot\css\app.css
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\wwwroot\images\icon.png
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\wwwroot\images\yw3_logo.png
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\wwwroot\index.html
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\wwwroot\js\app.js
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\Yo-kai Watch Launcher.exe
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\Yo-kai Watch Launcher.deps.json
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\Yo-kai Watch Launcher.runtimeconfig.json
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\Yo-kai Watch Launcher.dll
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\Microsoft.Web.WebView2.Core.dll
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\Microsoft.Web.WebView2.WinForms.dll
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\Microsoft.Web.WebView2.Core.xml
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\Microsoft.Web.WebView2.WinForms.xml
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\Microsoft.Web.WebView2.Wpf.xml
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\Launcher.csproj.AssemblyReference.cache
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\MainWindow.baml
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\MainWindow.g.cs
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\App.g.cs
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\Yo-kai Watch Launcher_Content.g.cs
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\Yo-kai Watch Launcher_MarkupCompile.cache
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\Yo-kai Watch Launcher.g.resources
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\Launcher.GeneratedMSBuildEditorConfig.editorconfig
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\Launcher.AssemblyInfoInputs.cache
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\Launcher.AssemblyInfo.cs
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\Launcher.csproj.CoreCompileInputs.cache
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\Launcher.csproj.Up2Date
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\Yo-kai Watch Launcher.dll
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\refint\Yo-kai Watch Launcher.dll
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\Launcher.genruntimeconfig.cache
+D:\Yo-kai Watch 3 For PC\Launcher\obj\Release\net9.0-windows\ref\Yo-kai Watch Launcher.dll
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\wwwroot\css\app.css.bak_avant_refonte
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\wwwroot\css\lobby.css
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\wwwroot\index.html.bak_avant_refonte
+D:\Yo-kai Watch 3 For PC\Launcher\bin\Release\net9.0-windows\wwwroot\js\app.js.bak_avant_refonte
